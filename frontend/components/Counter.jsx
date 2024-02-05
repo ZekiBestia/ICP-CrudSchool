@@ -27,7 +27,7 @@ const Counter = () => {
 
   return (
     <div className="example">
-      <p style={{ fontSize: "2.5em" }}>{count?.toString()}</p>
+      <p style={{ fontSize: "4em" }}>{count?.toString()}</p>
       <button className="connect-button" onClick={increment}>+</button>
     </div>
   )

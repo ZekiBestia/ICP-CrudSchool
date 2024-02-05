@@ -9,7 +9,7 @@ import "@connect2ic/core/style.css"
 //Import canister definitions like this:
 import * as social from "../src/declarations/social"
 import { IcpSocial } from "./components/Social"
-
+import Footer from "./components/Footer";
 function App() {
 
   return (
@@ -22,6 +22,7 @@ function App() {
       </header>
       <ConnectDialog />
       <IcpSocial />
+      <Footer />
     </div>
   )
 }
@@ -31,7 +32,7 @@ const client = createClient({
     social,
   },
   providers: [
-    new InternetIdentity({ providerUrl: "http://127.0.0.1:8000/?canisterId=be2us-64aaa-aaaaa-qaabq-cai" })
+    new InternetIdentity({ providerUrl: "http://127.0.0.1:8080/?canisterId=be2us-64aaa-aaaaa-qaabq-cai" })
   ],
   globalProviderConfig: {
     /*
